@@ -886,6 +886,16 @@ body {
 
 // media
 
+@media screen and (max-height: 1220px) {
+    .tabcontent{
+        flex-direction: column;
+
+        &__text{
+            margin-bottom: 30px;
+        }
+    }
+}
+
 @media screen and (max-height: 1090px) {
     .main {
         height: auto;
