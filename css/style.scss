@@ -165,7 +165,7 @@ body {
     left: 0;
     font-size: 1.1rem;
     background-color: rgba(18, 32, 48, 0.4);
-    z-index: 100;
+    z-index: 1000;
 
     &__wrapper {
         @extend %flex;
@@ -182,7 +182,7 @@ body {
         padding: 2px 0;
 
         &:not(:last-child) {
-            margin-right: 20px;
+            margin-bottom: 40px;
         }
 
         &::after {
@@ -218,6 +218,7 @@ body {
 
     .logo {
         position: relative;
+        z-index: 100;
 
         &__text {
             font-weight: 600;
@@ -241,7 +242,8 @@ body {
     width: 40px;
     height: 20px;
     position: relative;
-    z-index: 10;
+    z-index: 100;
+    cursor: pointer;
     display: none;
 
     &::before,
@@ -250,21 +252,58 @@ body {
     {
         content: '';
         width: 100%;
-        height: 2px;
+        height: 3px;
+        top: 0;
         left: 0;
         position: absolute;
         background-color: $clWhite;
+        border-radius: .13em;
+        transition: all .2s linear;
     }
 
     span{
         top: 50%;
-        transform: translateY(-50%);
         width: 80%;
     }
 
     &::after{
-        bottom: 0;
-        width: 90%;
+        top: 100%;
+        width: 100%;
+    }
+
+    &.active{
+        &::before{
+            transform: rotate(45deg);
+            top: 10px;
+        }
+
+        span{
+            transform: translateX(20px);
+            opacity: 0;
+        }
+
+        &::after{
+            transform: rotate(-45deg);
+            top: 10px;
+        }
+    }
+}
+
+.overlay{
+    position: absolute;
+    border-radius: 50%;
+    top: -20%;
+    left: -20%;
+    background-color: $clBlack;
+    transition: transform .8s ease-out;
+    width: 100px;
+    height: 100px;
+    visibility: hidden;
+    z-index: 10;
+
+    &.show{
+        visibility: visible;
+        transform: scale(40);
     }
 }
 
@@ -284,6 +323,7 @@ body {
 
 .telephone {
     @extend %flex;
+    z-index: 100;
 
     .telephone-icon {
         margin-right: 10px;
@@ -988,8 +1028,25 @@ body {
         display: block;
     }
 
-    .header__nav{
-        display: none;
+    .header{
+        padding-top: 10px;
+
+        &__nav{
+            display: none;
+            z-index: 100;
+            position:fixed;
+            left: 50%;
+            top: 20%;
+            transform: translateX(-50%);
+
+            &.show{
+                display: block;
+            }
+        }
+
+        &__ul{
+            flex-direction: column;
+        }
     }
 
     .main__wrapper-img *{

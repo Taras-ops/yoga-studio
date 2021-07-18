@@ -23,6 +23,20 @@ tabsLink.forEach(e => {
   })
 })
 
+// burger
+
+const burger = document.getElementById('burger'),
+      overlay = document.getElementById('overlay'),
+      headertNav = document.getElementById('headerNav')
+
+burger.addEventListener('click', () => {
+  burger.classList.toggle('active')
+  overlay.classList.toggle('show')
+  headertNav.classList.toggle('show')
+})
+
+
+
 // slider
 
 $(function() {
