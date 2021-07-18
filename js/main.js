@@ -34,7 +34,16 @@ $(function() {
     speed: 700,
     waitForAnimate: true,
     touchTreshold: 9,
-    touchMove: false
+    touchMove: false,
+
+    responsive: [
+      {
+        breakpoint: 700,
+        settings: {
+          centerMode: false,
+        }
+      }
+    ]
   });
 });
 
