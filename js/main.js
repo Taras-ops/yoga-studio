@@ -1,3 +1,93 @@
+// header
+
+const header = document.querySelector(".header")
+
+window.addEventListener("scroll", () => {
+  header.classList.toggle("fixed", window.scrollY > 0)
+})
+
+
+// scroll
+
+const headerLinks = document.querySelectorAll('.header__link'),
+      logo = document.getElementById("logo"),
+      burger = document.getElementById('burger'),
+      overlay = document.getElementById('overlay'),
+      headertNav = document.getElementById('headerNav')
+
+
+headerLinks.forEach(elem => elem.addEventListener("click", navbarLinkClick))
+
+logo.addEventListener("click", e => {
+  e.preventDefault()
+  document.querySelector("main").scrollIntoView({
+    behavior: "smooth"
+  });
+})
+
+function navbarLinkClick(event){
+  smoothScrool(event)
+  removeClass()
+}
+
+function removeClass() {
+  burger.classList.remove('active')
+  overlay.classList.remove('show')
+  headertNav.classList.remove('show')
+}
+
+// function smoothScrool(event){
+//   event.preventDefault()
+
+//   const targetId = event.currentTarget.getAttribute('href')
+
+//   window.scrollTo({
+//     top: targetId==="#" ? 0 : document.querySelector(targetId).offsetTop,
+//     behavior: "smooth"
+//   });
+
+// }
+
+function smoothScrool(event){
+  event.preventDefault()
+
+  const targetId = event.currentTarget.getAttribute('href')
+
+  document.querySelector(targetId).scrollIntoView({
+    behavior: "smooth"
+  });
+
+}
+
+// burger
+
+
+
+burger.addEventListener('click', () => {
+  burger.classList.toggle('active')
+  overlay.classList.toggle('show')
+  headertNav.classList.toggle('show')
+})
+
+// my
+
+const benefit = document.getElementById("benefit")
+
+
+window.addEventListener("scroll", () => {
+  if(window.scrollY > benefit.offsetTop){
+
+  }
+})
+
+function headerLinkAddClassOnScroll() {
+
+}
+
+
+
+// tab
+
 const tabsLink = document.querySelectorAll('#tabsLink'),
       tabContents = document.querySelectorAll('.tabcontent')
 
@@ -21,18 +111,6 @@ tabsLink.forEach(e => {
       content++
     }
   })
-})
-
-// burger
-
-const burger = document.getElementById('burger'),
-      overlay = document.getElementById('overlay'),
-      headertNav = document.getElementById('headerNav')
-
-burger.addEventListener('click', () => {
-  burger.classList.toggle('active')
-  overlay.classList.toggle('show')
-  headertNav.classList.toggle('show')
 })
 
 
@@ -74,8 +152,7 @@ let checkInput = input => {
 
 // fancy box
 
-
-
 Fancybox.bind("[data-fancybox]", {
 
 });
+

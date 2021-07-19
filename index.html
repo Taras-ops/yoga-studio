@@ -15,6 +15,7 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="css/fancybox.css" />
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -24,103 +25,131 @@
         <div class="overlay" id="overlay"></div>
         <div class="container">
             <div class="header__wrapper">
-                <div class="burger" id="burger">
+                <div class="wow bounceInLeft  burger" id="burger">
                     <span></span>
                 </div>
-                <a href="index.html" class="logo" data-aos="fade-right">
+                <a href="main" class="wow bounceInLeft logo" id="logo">
                     <p class="logo__text">Yoga</p>
                     <p class="logo__text">Studio</p>
                 </a>
                 <nav class="header__nav" id="headerNav">
                     <ul class="header__ul">
-                        <li class="header__li" data-aos="zoom-in-up"><a href="" class="header__link">Про нас</a></li>
-                        <li class="header__li" data-aos="zoom-in-up" data-aos-delay="50"><a href="" class="header__link">Користь</a></li>
-                        <li class="header__li" data-aos="zoom-in-up" data-aos-delay="100"><a href="" class="header__link">Заняття</a></li>
-                        <li class="header__li" data-aos="zoom-in-up" data-aos-delay="150"><a href="" class="header__link">Відгуки</a></li>
-                        <li class="header__li" data-aos="zoom-in-up" data-aos-delay="200"><a href="" class="header__link">Галарея</a></li>
-                        <li class="header__li" data-aos="zoom-in-up" data-aos-delay="250"><a href="" class="header__link">Ціни</a></li>
-                        <li class="header__li" data-aos="zoom-in-up" data-aos-delay="300"><a href="" class="header__link">Контакти</a></li>
+                        <li class="wow fadeInUp header__li"
+                        data-wow-delay=".4s">
+                            <a href="#about" class="header__link">Про нас</a>
+                        </li>
+                        <li class="wow fadeInUp header__li"
+                        data-wow-delay=".8s">
+                            <a href="#benefit" class="header__link">Користь</a>
+                        </li>
+                        <li class="wow fadeInUp header__li"
+                        data-wow-delay="1.2s">
+                            <a href="#lesson" class="header__link">Заняття</a>
+                        </li>
+                        <li class="wow fadeInUp header__li"
+                        data-wow-delay="1.6s">
+                            <a href="#testimonials" class="header__link">Відгуки</a>
+                        </li>
+                        <li class="wow fadeInUp header__li"
+                        data-wow-delay="2s">
+                            <a href="#gallery" class="header__link">Галарея</a>
+                        </li>
+                        <li class="wow fadeInUp header__li"
+                        data-wow-delay="2.4s">
+                            <a href="#prices" class="header__link">Ціни</a>
+                        </li>
+                        <li class="wow fadeInUp header__li"
+                        data-wow-delay="2.8s">
+                            <a href="#contact" class="header__link">Контакти</a>
+                        </li>
                     </ul>
                 </nav>
-                <div class="telephone" data-aos="fade-left">
-                    <a href="" class="telephone-icon"><i class="fas fa-phone-alt"></i></a>
-                    <a href="" class="telephone-number">(999)-999-9999</a>
+                <div class="wow slideInRight telephone" data-wow-delay="3s">
+                    <a class="telephone-icon"><i class="fas fa-phone-alt"></i></a>
+                    <a href="tel:+380-63-260-3386" class="telephone-number">+380-63-260-3386</a>
                 </div>
             </div>
         </div>
     </header>
 
-    <main class="main" style="background-image: url(img/forest-bg.jpg);">
+    <main class="main" style="background-image: url(img/forest-bg.jpg);" id="main">
         <div class="container">
             <div class="section-wrapper main__wrapper">
                 <div class="main__content">
-                    <h1 class="title">Yoga Studio</h1>
-                    <p class="main__subtitle">
+                    <h1 class="wow fadeInLeftBig title" data-wow-duration="2s">Yoga Studio</h1>
+                    <p class="wow fadeInLeftBig main__subtitle" data-wow-delay="1s" data-wow-duration="2s">
                         Займайся йогою <br> разом з <span>нами</span>
                     </p>
-                    <a href="" class="btn btn-green about-btn">Приєднатися<span></span></a>
+                    <a href="" class="wow fadeInLeftBig btn btn-green about-btn" data-wow-delay="2s" data-wow-duration="2s">Приєднатися<span></span></a>
                 </div>
 
                 <div class="main__wrapper-img">
-                    <img src="img/yoga.png" alt="yoga">
+                    <img class="wow slideInRight" data-wow-duration="2s" src="img/yoga.png" alt="yoga">
                 </div>
 
             </div>
 
             <ul class="social-links">
                 <li class="social-links__li"><a href="" class="social-links__social-link" title="instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a></li>
+                        <i class="wow fadeInUpBig fab fa-instagram" data-wow-delay="1s" data-wow-duration="2s"></i>
+                    </a>
+                </li>
                 <li class="social-links__li"><a href="" class="social-links__social-link" title="facebook">
-                        <i class="fab fa-facebook-f"></i>
-                    </a></li>
+                        <i class="wow fadeInUpBig fab fa-facebook-f" data-wow-delay="1.4s" data-wow-duration="2s"></i>
+                    </a>
+                </li>
                 <li class="social-links__li"><a href="" class="social-links__social-link" title="twitter">
-                        <i class="fab fa-twitter"></i>
-                    </a></li>
+                        <i class="wow fadeInUpBig fab fa-twitter" data-wow-delay="1.8s" data-wow-duration="2s"></i>
+                    </a>
+                </li>
                 <li class="social-links__li"><a href="" class="social-links__social-link" title="telegram">
-                        <i class="fab fa-telegram-plane"></i>
-                    </a></li>
+                        <i class="wow fadeInUpBig fab fa-telegram-plane" data-wow-delay="2.4s" data-wow-duration="2s"></i>
+                    </a>
+                </li>
             </ul>
 
 
         </div>
         <div class="main__wave">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#fff" fill-opacity="1" d="M0,320L80,304C160,288,320,256,480,218.7C640,181,800,139,960,122.7C1120,107,1280,117,1360,122.7L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+              </svg>
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path fill="#ffffff" fill-opacity="1"
                     d="M0,160L80,170.7C160,181,320,203,480,181.3C640,160,800,96,960,80C1120,64,1280,96,1360,112L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
                 </path>
-            </svg>
+            </svg> -->
         </div>
     </main>
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="section-wrapper about__wrapper">
-                <picture class="about__img-wrapper">
+                <picture class="wow bounceIn about__img-wrapper">
                     <source srcset="img/team.webp" type="image/webp" />
                     <img src="img/team.webp" alt="our team" />
                 </picture>
                 <div class="about__wrapper">
-                    <h2 class="section-title">Про нас</h2>
-                    <p class="about__subtitle" data-aos="fade-left">Yoga Studio - це креативна студія яка точно здивує тебе. Ми предлагаємо
+                    <h2 class="wow bounceInRight section-title">Про нас</h2>
+                    <p class="wow bounceInRight about__subtitle" data-wow-delay=".5s">Yoga Studio - це креативна студія яка точно здивує тебе. Ми предлагаємо
                         тобі наші заняття у <span>комфортному</span> приміщені. Ми допоможемо тобі сконцентруватися на
                         основному та відчти себе справжнім героєм. Тут вас навчать перемагати не тільки своїх
                         суперників, але і, в першу чергу, себе і свою лінь. За допомогою спеціальних програм тренувань з
                         бойового самбо, кроссфіту і ваших власних зусиль ви зможете привести своє тіло до
                         <span>досконалості</span>. Заняття в клубі проводяться для <span>чоловіків і жінок</span>,
                         обмежень у віці <span>немає</span>.Так що впевнено приєднуйся до нас!</p>
-                    <a href="" class="btn btn-green about-btn">Приєднатися<span></span></a>
+                    <a href="" class="wow bounceInRight btn btn-green about-btn" data-wow-delay="1s">Приєднатися<span></span></a>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <section class="benefit">
+    <section class="benefit" id="benefit">
         <div class="container">
-            <h2 class="section-title">Користь йоги</h2>
+            <h2 class="wow bounceInUp section-title">Користь йоги</h2>
             <div class="benefit__wrapper">
-                <div class="benefit__block">
+                <div class="wow bounceIn benefit__block" data-wow-delay=".4s">
                     <img src="img/posture.png" alt="" class="benefit__img">
                     <div class="benefit__text">
                         <h5 class="benefit__block-title">Гнучкість</h5>
@@ -131,7 +160,7 @@
                             гнучкість і зміцнюєте баланс сил</p>
                     </div>
                 </div>
-                <div class="benefit__block">
+                <div class="wow bounceIn benefit__block" data-wow-delay=".8s">
                     <img src="img/muscle.png" alt="" class="benefit__img">
                     <div class="benefit__text">
                         <h5 class="benefit__block-title">Зміцнює м'язову тканину.</h5>
@@ -141,7 +170,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="benefit__block">
+                <div class="wow bounceIn benefit__block" data-wow-delay="1.2s">
                     <img src="img/yoga-icon.png" alt="" class="benefit__img">
                     <div class="benefit__text">
                         <h6 class="benefit__block-title">Покращує поставу</h6>
@@ -150,7 +179,7 @@
                             важливо, що йога допомагає поліпшити поставу.</p>
                     </div>
                 </div>
-                <div class="benefit__block">
+                <div class="wow bounceIn benefit__block" data-wow-delay="1.2s">
                     <img src="img/pain-in-joints.png" alt="" class="benefit__img">
                     <div class="benefit__text">
                         <h6 class="benefit__block-title">Поліпшує стан суглобів</h6>
@@ -159,7 +188,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="benefit__block">
+                <div class="wow bounceIn benefit__block" data-wow-delay=".8s">
                     <img src="img/depression.png" alt="" class="benefit__img">
                     <div class="benefit__text">
                         <h6 class="benefit__block-title">Допомагає боротись зі стресом</h6>
@@ -169,7 +198,7 @@
                             щасливіше від того, що практикуємо йогу.</p>
                     </div>
                 </div>
-                <div class="benefit__block">
+                <div class="wow bounceIn benefit__block" data-wow-delay=".4s">
                     <img src="img/sleep.png" alt="" class="benefit__img">
                     <div class="benefit__text">
                         <h6 class="benefit__block-title">Покращує якість сну</h6>
@@ -184,31 +213,31 @@
         </div>
     </section>
 
-    <section class="lesson">
+    <section class="lesson" id="lesson">
         <div class="container">
-            <h2 class="section-title">Наші уроки</h2>
+            <h2 class="wow bounceInLeft section-title">Наші уроки</h2>
             <div class="lesson__wrapper">
                 <div class="tabcontent-wrapper">
                     <div class="tabcontent show" data-yoga="hatha">
                         <div class="tabcontent__text">
-                            <h4 class="tabcontent__yoga-name">Хатха</h4>
-                            <p class="tabcontent__yoga-description">Цей найпоширеніший вид йоги. Більшість студій з йоги
+                            <h4 class="wow bounceInLeft tabcontent__yoga-name">Хатха</h4>
+                            <p class="wow bounceInLeft tabcontent__yoga-description" data-wow-delay=".4s">Цей найпоширеніший вид йоги. Більшість студій з йоги
                                 мають назву «хатха-йога», але багато хто з них використовують цю назву для позначення
                                 більш повільного класу з повільними рухами і більш тривалим перебуванням на одній асан.
                                 Завдяки тому що в хатха-йозі немає возрастательних рамок (як в інших видах йоги),
                                 займатися нею можуть всі бажаючі без будь-яких обмежень.</p>
-                            <p class="tabcontent__yoga-description">Після декількох місяців занять ваше тіло стане більш
+                            <p class="wow bounceInLeft tabcontent__yoga-description" data-wow-delay=".8s">Після декількох місяців занять ваше тіло стане більш
                                 гнучким і значно витривалішим. Ви станете доволі спритним(ою), будете менше травмуватися
                                 під час занять іншими видами спорту.</p>
                             <div class="tabcontent__lesson">
-                                <p class="tabcontent__lesson-title">Заняття Хатха відбуваються:</p>
+                                <p class="wow bounceInLeft tabcontent__lesson-title" data-wow-delay="1s">Заняття Хатха відбуваються:</p>
                                 <div class="tabcontent__lesson-wrapper">
-                                    <div class="tabcontent__lesson-block">
+                                    <div class="wow bounceInLeft tabcontent__lesson-block" data-wow-delay="1.8s">
                                         <p class="tabcontent__lesson-date">У понеділок</p>
                                         <p class="tabcontent__lesson-time">9:00 - 10:30</p>
                                         <p class="tabcontent__lesson-time">16:00 - 17:30</p>
                                     </div>
-                                    <div class="tabcontent__lesson-block">
+                                    <div class="wow bounceInLeft tabcontent__lesson-block" data-wow-delay="1.4s">
                                         <p class="tabcontent__lesson-date">У четвер</p>
                                         <p class="tabcontent__lesson-time">9:00 - 10:30</p>
                                         <p class="tabcontent__lesson-time">16:00 - 17:30</p>
@@ -216,54 +245,43 @@
                                 </div>
                             </div>
                         </div>
-                        <picture class="tabcontent__img"">
+                        <picture class="wow bounceInRight tabcontent__img" data-wow-duration="2.5s">
                             <source srcset="img/hatha.webp" type="image/webp" />
-                            <img src="img/hatha.jpg" alt="" />
+                            <img src="img/hatha.jpg" alt="hatha photo" />
                         </picture>
                     </div>
                     <div class="tabcontent" data-yoga="ashtanga">
                         <div class="tabcontent__text">
                             <h4 class="tabcontent__yoga-name">Аштанга</h4>
-                            <p class="tabcontent__yoga-description">Цей найпоширеніший вид йоги. Більшість студій з йоги
-                                мають назву «хатха-йога», але багато хто з них використовують цю назву для позначення
-                                більш повільного класу з повільними рухами і більш тривалим перебуванням на одній асан.
-                                Завдяки тому що в хатха-йозі немає возрастательних рамок (як в інших видах йоги),
-                                займатися нею можуть всі бажаючі без будь-яких обмежень.</p>
-                            <p class="tabcontent__yoga-description">Після декількох місяців занять ваше тіло стане більш
-                                гнучким і значно витривалішим. Ви станете доволі спритним(ою), будете менше травмуватися
-                                під час занять іншими видами спорту.</p>
+                            <p class="tabcontent__yoga-description">Головною відмінністю аштанга-йоги від звичайної йоги є те, що асани з’єднуються між собою віньяса. Цей різновид йоги є надзвичайно активним тренуванням для всіх груп м’язів, під час якої, завдяки активному потовиділенню, організм позбавляється від токсинів і шлаків, в результаті чого поліпшується циркуляція крові. Слід також зауважити, що аштанга піклується не тільки про тіло, а й про духовний стан людини. Вона навчить вас управляти потоками енергії, а також розподіляти і концентрувати їх.
+                            </p>
+                            <p class="tabcontent__yoga-description">Чи варто вам спробувати займатися аштанга-йогою? Відповідь – безумовно, так!</p>
                             <div class="tabcontent__lesson">
                                 <p class="tabcontent__lesson-title">Заняття Хатха відбуваються:</p>
                                 <div class="tabcontent__lesson-wrapper">
                                     <div class="tabcontent__lesson-block">
-                                        <p class="tabcontent__lesson-date">У понеділок</p>
+                                        <p class="tabcontent__lesson-date">У вівторок</p>
                                         <p class="tabcontent__lesson-time">9:00 - 10:30</p>
                                         <p class="tabcontent__lesson-time">16:00 - 17:30</p>
                                     </div>
                                     <div class="tabcontent__lesson-block">
-                                        <p class="tabcontent__lesson-date">У четвер</p>
+                                        <p class="tabcontent__lesson-date">У п'ятницю</p>
                                         <p class="tabcontent__lesson-time">9:00 - 10:30</p>
                                         <p class="tabcontent__lesson-time">16:00 - 17:30</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <picture class="tabcontent__img" data-aos="zoom-in-left" data-aos-duration="2000">
-                            <source srcset="img/hatha.webp" type="image/webp" />
-                            <img src="img/hatha.jpg" alt="" />
+                        <picture class="tabcontent__img" >
+                            <source srcset="img/ashtanha.webp" type="image/webp" />
+                            <img src="img/ashtanha.jpg" alt="ashtanga photo" />
                         </picture>
                     </div>
                     <div class="tabcontent" data-yoga="bikram">
                         <div class="tabcontent__text">
                             <h4 class="tabcontent__yoga-name">Бікрам</h4>
-                            <p class="tabcontent__yoga-description">Цей найпоширеніший вид йоги. Більшість студій з йоги
-                                мають назву «хатха-йога», але багато хто з них використовують цю назву для позначення
-                                більш повільного класу з повільними рухами і більш тривалим перебуванням на одній асан.
-                                Завдяки тому що в хатха-йозі немає возрастательних рамок (як в інших видах йоги),
-                                займатися нею можуть всі бажаючі без будь-яких обмежень.</p>
-                            <p class="tabcontent__yoga-description">Після декількох місяців занять ваше тіло стане більш
-                                гнучким і значно витривалішим. Ви станете доволі спритним(ою), будете менше травмуватися
-                                під час занять іншими видами спорту.</p>
+                            <p class="tabcontent__yoga-description">“Бікрам йога” - популярний у США напрям, що поєднує йогу і ...сауну. Автор методики – індус Бікрам Чоудхурі - вважає, що хатха-йога максимально ефективна в жаркому індійському кліматі. А не при кімнатній температурі Західного світу.</p>
+                            <p class="tabcontent__yoga-description">Заняття з Бікрам йоги проводяться у приміщеннях з температурою повітря 37-40 градусів по Цельсію. Класичне заняття складається із 26 асан (що у швидкому темпі виконуються упродовж півтори години) і двох дихальних вправ. На такі заняття варто брати з собою рушничок і пляшку води, оскільки сухим ви не вийдете.</p>
                             <div class="tabcontent__lesson">
                                 <p class="tabcontent__lesson-title">Заняття Хатха відбуваються:</p>
                                 <div class="tabcontent__lesson-wrapper">
@@ -280,50 +298,41 @@
                                 </div>
                             </div>
                         </div>
-                        <picture class="tabcontent__img" data-aos="zoom-in-left" data-aos-duration="2000">
-                            <source srcset="img/hatha.webp" type="image/webp" />
-                            <img src="img/hatha.jpg" alt="" />
+                        <picture class="tabcontent__img" >
+                            <source srcset="img/bikram.webp" type="image/webp" />
+                            <img src="img/bikram.jpg" alt="bikram photo" />
                         </picture>
                     </div>
                     <div class="tabcontent" data-yoga="vinyasa">
                         <div class="tabcontent__text">
                             <h4 class="tabcontent__yoga-name">Виньяса</h4>
-                            <p class="tabcontent__yoga-description">Цей найпоширеніший вид йоги. Більшість студій з йоги
-                                мають назву «хатха-йога», але багато хто з них використовують цю назву для позначення
-                                більш повільного класу з повільними рухами і більш тривалим перебуванням на одній асан.
-                                Завдяки тому що в хатха-йозі немає возрастательних рамок (як в інших видах йоги),
-                                займатися нею можуть всі бажаючі без будь-яких обмежень.</p>
-                            <p class="tabcontent__yoga-description">Після декількох місяців занять ваше тіло стане більш
-                                гнучким і значно витривалішим. Ви станете доволі спритним(ою), будете менше травмуватися
-                                під час занять іншими видами спорту.</p>
+                            <p class="tabcontent__yoga-description">О, йогин! Не роби асану без віньяси! » - говорить стародавній індійський трактат «Йога Корунта». Виньяса - це поєднання руху з диханням: вдих - один рух, видих - інше. За рахунок такої синхронізації набір асан перетворюється в єдиний потік, практика стає медитацією в русі.</p>
                             <div class="tabcontent__lesson">
                                 <p class="tabcontent__lesson-title">Заняття Хатха відбуваються:</p>
                                 <div class="tabcontent__lesson-wrapper">
                                     <div class="tabcontent__lesson-block">
                                         <p class="tabcontent__lesson-date">У понеділок</p>
-                                        <p class="tabcontent__lesson-time">9:00 - 10:30</p>
-                                        <p class="tabcontent__lesson-time">16:00 - 17:30</p>
+                                        <p class="tabcontent__lesson-time">11:00 - 11:30</p>
                                     </div>
                                     <div class="tabcontent__lesson-block">
                                         <p class="tabcontent__lesson-date">У четвер</p>
-                                        <p class="tabcontent__lesson-time">9:00 - 10:30</p>
-                                        <p class="tabcontent__lesson-time">16:00 - 17:30</p>
+                                        <p class="tabcontent__lesson-time">10:00 - 11:30</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <picture class="tabcontent__img" data-aos="zoom-in-left" data-aos-duration="2000">
-                            <source srcset="img/hatha.webp" type="image/webp" />
-                            <img src="img/hatha.jpg" alt="" />
+                        <picture class="tabcontent__img" >
+                            <source srcset="img/vinyasa.webp" type="image/webp" />
+                            <img src="img/vinyasa.jpg" alt="vinyasa photo" />
                         </picture>
                     </div>
                 </div>
                 <div class="tabs">
                     <ul class="tabs__ul">
-                        <li><a class="btn tab-link active" id="tabsLink" data-tabLink="hatha">Хатха</a></li>
-                        <li><a class="btn tab-link" id="tabsLink" data-tabLink="ashtanga">Аштанга</a></li>
-                        <li><a class="btn tab-link" id="tabsLink" data-tabLink="bikram">Бікрам</a></li>
-                        <li><a class="btn tab-link" id="tabsLink" data-tabLink="vinyasa">Виньяса</a></li>
+                        <li><a class="wow bounceIn btn tab-link active" id="tabsLink" data-tabLink="hatha" data-wow-delay=".4s">Хатха</a></li>
+                        <li><a class="wow bounceIn btn tab-link" id="tabsLink" data-tabLink="ashtanga" data-wow-delay=".8s">Аштанга</a></li>
+                        <li><a class="wow bounceIn btn tab-link" id="tabsLink" data-tabLink="bikram" data-wow-delay="1.2s">Бікрам</a></li>
+                        <li><a class="wow bounceIn btn tab-link" id="tabsLink" data-tabLink="vinyasa" data-wow-delay="1.6s">Виньяса</a></li>
                     </ul>
                 </div>
             </div>
@@ -331,103 +340,101 @@
     </section>
 
 
-    <section class="testimonials">
+    <section class="testimonials" id="testimonials">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up" data-aos-duration="1100">Відгуки наших клієнтів</h2>
-        <div class="testimonials__wrapper">
-            <div class="coments"
-            data-aos="zoom-in"
-            data-aos-duration="1500">
-                <div class="coment">
-                    <div class="coment__inner">
-                        <picture class="coment__avatar">
-                            <source data-lazy="img/avatar.png" type="image/png">
-                            <img data-lazy="img/avatar.webp" alt="">
-                        </picture>
-                        <div class="coment__inner-group">
-                            <p class="coment__user-name">Світлана</p>
-                            <p class="coment__user-terxt">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Точках текста вершину lorem то строчка бросил? Его ручеек продолжил она имеет рекламных, буквенных безорфографичный курсивных свою коварный жизни раз инициал над назад по всей большой, страна запятой прямо однажды свое!</p>
+            <h2 class="wow section-title bounceInUp">Відгуки наших клієнтів</h2>
+            <div class="testimonials__wrapper">
+                <div class="wow coments bounceInLeft">
+                    <div class="coment">
+                        <div class="coment__inner">
+                            <picture class="coment__avatar">
+                                <source data-lazy="img/avatar.png" type="image/png">
+                                <img data-lazy="img/avatar.webp" alt="avatar">
+                            </picture>
+                            <div class="coment__inner-group">
+                                <p class="coment__user-name">Світлана</p>
+                                <p class="coment__user-terxt">Велике спасибі за вашу роботу. Все підійшло, якість і опис відповідає.<p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coment">
+                        <div class="coment__inner">
+                            <picture class="coment__avatar">
+                                <source data-lazy="img/avatar-2.jpg" type="image/jpeg">
+                                <img data-lazy="img/avatar-2.webp" alt="avatar">
+                            </picture>
+                            <div class="coment__inner-group">
+                                <p class="coment__user-name">Олег</p>
+                                <p class="coment__user-terxt">Дякую за оперативність доставки продукції. Якістю продукції дуже задоволена. Все супер!!!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coment">
+                        <div class="coment__inner">
+                            <picture class="coment__avatar">
+                                <source data-lazy="img/avatar-3.jpg" type="image/jpeg">
+                                <img data-lazy="img/avatar-3.webp" alt="avatar">
+                            </picture>
+                            <div class="coment__inner-group">
+                                <p class="coment__user-name">Оксана</p>
+                                <p class="coment__user-terxt">Все сподобалося. Дякую за чудово проведений час</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coment">
+                        <div class="coment__inner">
+                            <picture class="coment__avatar">
+                                <source data-lazy="img/avatar-4.jpg" type="image/jpeg">
+                                <img data-lazy="img/avatar-4.webp" alt="avatar">
+                            </picture>
+                            <div class="coment__inner-group">
+                                <p class="coment__user-name">Світлана</p>
+                                <p class="coment__user-terxt">Найкращі рекомендації про студію. Все цікаво, оперативно. Ціни привабливі. Дякую за Вашу роботу.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coment">
+                        <div class="coment__inner">
+                            <picture class="coment__avatar">
+                                <source data-lazy="img/avatar-5.jpg" type="image/jpeg">
+                                <img data-lazy="img/avatar-5.webp" alt="avatar">
+                            </picture>
+                            <div class="coment__inner-group">
+                                <p class="coment__user-name">Світлана</p>
+                                <p class="coment__user-terxt">Займаюсь вже рік. Все чудово та якісно. Велике спасибі наставникам за вашу роботую Ви найкращі!<p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="coment">
-                    <div class="coment__inner">
-                        <picture class="coment__avatar">
-                            <source data-lazy="img/avatar.png" type="image/png">
-                            <img data-lazy="img/avatar.webp" alt="">
-                        </picture>
-                        <div class="coment__inner-group">
-                            <p class="coment__user-name">Світлана</p>
-                            <p class="coment__user-terxt">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Точках текста вершину lorem то строчка бросил? Его ручеек продолжил она имеет рекламных, буквенных безорфографичный курсивных свою коварный жизни раз инициал над назад по всей большой, страна запятой прямо однажды свое!</p>
-                        </div>
+                <form action="" class="wow testiomonials-form bounceInRight">
+                    <h3 class="block-title">Залишились питання? <br> Заповни форму і ми вам передзвоним</h3>
+                    <div class="testiomonials-form__group">
+                        <input type="text" class="testiomonials-form__input" id="inputName" onblur="checkInput(this)"/>
+                        <label for="#inputName" class="testiomonials-form__label">Ваше ім'я</label>
+                        <div class="testiomonials-form__input-bar"></div>
                     </div>
-                </div>
-                <div class="coment">
-                    <div class="coment__inner">
-                        <picture class="coment__avatar">
-                            <source data-lazy="img/avatar.png" type="image/png">
-                            <img data-lazy="img/avatar.webp" alt="">
-                        </picture>
-                        <div class="coment__inner-group">
-                            <p class="coment__user-name">Світлана</p>
-                            <p class="coment__user-terxt">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Точках текста вершину lorem то строчка бросил? Его ручеек продолжил она имеет рекламных, буквенных безорфографичный курсивных свою коварный жизни раз инициал над назад по всей большой, страна запятой прямо однажды свое!</p>
-                        </div>
+                    <div class="testiomonials-form__group">
+                        <input type="tel" class="testiomonials-form__input" id="inputTelephone" onblur="checkInput(this)"/>
+                        <label for="#inputTelephone" class="testiomonials-form__label">Номер телефона</label>
+                        <div class="testiomonials-form__input-bar"></div>
                     </div>
-                </div>
-                <div class="coment">
-                    <div class="coment__inner">
-                        <picture class="coment__avatar">
-                            <source data-lazy="img/avatar.png" type="image/png">
-                            <img data-lazy="img/avatar.webp" alt="">
-                        </picture>
-                        <div class="coment__inner-group">
-                            <p class="coment__user-name">Світлана</p>
-                            <p class="coment__user-terxt">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Точках текста вершину lorem то строчка бросил? Его ручеек продолжил она имеет рекламных, буквенных безорфографичный курсивных свою коварный жизни раз инициал над назад по всей большой, страна запятой прямо однажды свое!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="coment">
-                    <div class="coment__inner">
-                        <picture class="coment__avatar">
-                            <source data-lazy="img/avatar.png" type="image/png">
-                            <img data-lazy="img/avatar.webp" alt="">
-                        </picture>
-                        <div class="coment__inner-group">
-                            <p class="coment__user-name">Світлана</p>
-                            <p class="coment__user-terxt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate debitis voluptatum, porro ex dolorum corporis sequi optio saepe deleniti? Qui.</p>
-                        </div>
-                    </div>
-                </div>
+                    <a href="" class="btn btn-green testiomonials-form__btn">
+                        Відправити<span></span>
+                    </a>
+                </form>
             </div>
-            <form action="" class="testiomonials-form"
-            data-aos="zoom-in-left"
-            data-aos-duration="1500">
-                <h3 class="block-title">Залишились питання? <br> Заповни форму і ми вам передзвоним</h3>
-                <div class="testiomonials-form__group">
-                    <input type="text" class="testiomonials-form__input" id="inputName" onblur="checkInput(this)"/>
-                    <label for="#inputName" class="testiomonials-form__label">Ваше ім'я</label>
-                    <div class="testiomonials-form__input-bar"></div>
-                </div>
-                <div class="testiomonials-form__group">
-                    <input type="tel" class="testiomonials-form__input" id="inputTelephone" onblur="checkInput(this)"/>
-                    <label for="#inputTelephone" class="testiomonials-form__label">Номер телефона</label>
-                    <div class="testiomonials-form__input-bar"></div>
-                </div>
-                <a href="" class="btn btn-green testiomonials-form__btn">
-                    Відправити<span></span>
-                </a>
-            </form>
-        </div>
         </div>
     </section>
 
-    <section class="gallery">
+    <section class="gallery" id="gallery">
         <div class="container">
-            <h2 class="section-title">Галарея</h2>
+            <h2 class="wow bounceInUp section-title">Галарея</h2>
             <div class="gallery__grid" >
                 <a href="" data-fancybox="gallery"
                 data-srcset="img/yoga-img-7.webp"
-                data-src="img/yoga-img-7.jpg">
+                data-src="img/yoga-img-7.jpg"
+                class="wow bounceIn"
+                data-wow-delay=".3s">
                     <picture class="gallery__picture gallery__picture-1">
                         <source srcset="img/yoga-img-7.webp" />
                         <img src="img/yoga-img-7.jpg" alt="" />
@@ -435,7 +442,9 @@
                 </a>
                 <a href="" data-fancybox="gallery"
                 data-srcset="img/yoga-img-2.webp"
-                data-src="img/yoga-img-2.jpg">
+                data-src="img/yoga-img-2.jpg"
+                class="wow bounceIn"
+                data-wow-delay=".3s">
                     <picture class="gallery__picture gallery__picture-2">
                         <source srcset="img/yoga-img-2.webp" />
                         <img src="img/yoga-img-2.jpg" alt="" />
@@ -443,7 +452,9 @@
                 </a>
                 <a href="" data-fancybox="gallery"
                 data-srcset="img/yoga-img-3.webp"
-                data-src="img/yoga-img-3.jpg">
+                data-src="img/yoga-img-3.jpg"
+                class="wow bounceIn"
+                data-wow-delay=".6s">
                     <picture class="gallery__picture gallery__picture-3">
                         <source srcset="img/yoga-img-3.webp" />
                         <img src="img/yoga-img-3.jpg" alt="" />
@@ -451,7 +462,9 @@
                 </a>
                 <a href="" data-fancybox="gallery"
                 data-srcset="img/yoga-img-4.webp"
-                data-src="img/yoga-img-4.jpg">
+                data-src="img/yoga-img-4.jpg"
+                class="wow bounceIn"
+                data-wow-delay=".6s">
                     <picture class="gallery__picture gallery__picture-4">
                         <source srcset="img/yoga-img-4.webp" />
                         <img src="img/yoga-img-4.jpg" alt="" />
@@ -459,7 +472,9 @@
                 </a>
                 <a href="" data-fancybox="gallery"
                 data-srcset="img/yoga-img-5.webp"
-                data-src="img/yoga-img-5.jpg">
+                data-src="img/yoga-img-5.jpg"
+                class="wow bounceIn"
+                data-wow-delay=".9s">
                     <picture class="gallery__picture gallery__picture-5">
                         <source srcset="img/yoga-img-5.webp" />
                         <img src="img/yoga-img-5.jpg" alt="" />
@@ -467,7 +482,9 @@
                 </a>
                 <a href="" data-fancybox="gallery"
                 data-srcset="img/yoga-img-8.webp"
-                data-src="img/yoga-img-8.jpg">
+                data-src="img/yoga-img-8.jpg"
+                class="wow bounceIn"
+                data-wow-delay=".9s">
                     <picture class="gallery__picture gallery__picture-6">
                         <source srcset="img/yoga-img-8.webp" />
                         <img src="img/yoga-img-8.jpg" alt="" />
@@ -477,27 +494,24 @@
         </div>
     </section>
 
-    <section class="prices">
+    <section class="prices" id="prices">
         <div class="container">
-            <h2 class="section-title">Ціни</h2>
+            <h2 class="wow fadeInUp section-title">Ціни</h2>
             <div class="prices__wrapper">
-                <div class="prices__block" data-aos="zoom-in-right"
-                data-aos-duration="1500">
+                <div class="wow bounceInLeft prices__block">
                     <h5 class="block-title">Спеціальний</h5>
                     <p class="prices__text">Дійсний 1 місяць</p>
                     <p class="prices__price"><span>200</span> грн за заняття</p>
                     <a href="" class="btn btn-green prices__btn prices__btn-1">Купити онлайн <span></span></a>
                 </div>
-                <div class="prices__block">
+                <div class="wow bounceIn prices__block">
                     <h5 class="block-title">Класичний</h5>
                     <p class="prices__text">Дійсний 2 місяця</p>
                     <p class="prices__price">5 тренерувань - <span>900</span> грн</p>
                     <p class="prices__price">10 тренерувань - <span>1700</span> грн</p>
                     <a href="" class="btn btn-green prices__btn prices__btn-2">Купити онлайн <span></span></a>
                 </div>
-                <div class="prices__block"
-                data-aos="zoom-in-left"
-                data-aos-duration="1500">
+                <div class="wow bounceInRight prices__block">
                     <h5 class="block-title">Без обмежень</h5>
                     <p class="prices__text">Повний доступ на місяць</p>
                     <p class="prices__price"><span>3500</span> грн за місяць</p>
@@ -507,14 +521,14 @@
         </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="container">
-            <h2 class="section-title">Контакти</h2>
+            <h2 class="wow fadeInUp section-title">Контакти</h2>
             <div class="contact__wrapper">
-                <div class="map">
+                <div class="wow flipInX map">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80798.9142734652!2d25.264995197078765!3d50.73911816036909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472599eba185965d%3A0xd25274a2228db86c!2z0JvRg9GG0YzQuiwg0JLQvtC70LjQvdGB0YzQutCwINC-0LHQu9Cw0YHRgtGM!5e0!3m2!1suk!2sua!4v1626202000765!5m2!1suk!2sua" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
-                <div class="contact__block" data-aos="flip-right"
+                <div class="wow flipInY contact__block" data-aos="flip-right"
                 data-aos-duration="1600">
                     <p class="contact__block-smtext">Номер телефона</p>
                     <p class="contact__bigtext">(999)-999-9999</p>
@@ -571,8 +585,13 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/fancybox.esm.js"></script>
     <script src="js/fancybox.umd.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/animate.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
 </body>
 
 </html>
